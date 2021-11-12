@@ -1,0 +1,9 @@
+<h1 class="display-4 text-center">Welcome to Arabesque Diner</h1>
+<br><br>
+<div class="text-center" *ngFor= "let category of categories">
+  <h3 class="">{{ category }}</h3>
+  <div class=""></div>
+  <div *ngFor= "let menu of GetByCategory(category)">
+    <p>{{ menu.item }} {{ menu.price }}</p>
+  </div>
+</div>
